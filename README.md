@@ -48,36 +48,44 @@ To learn React, check out the [React documentation](https://reactjs.org/).
 ## TODOs / Future Improvements
 
 1. Migrate to Vite
+
     a. Current setup uses CRA (react-scripts) which shows Webpack deprecation warnings.
     b. Migration to Vite will improve build speed, dev server performance, and reduce bundle size.
 
 2. Add Routing
+
     a. Currently App.tsx renders a single Absences page.
     b. For scalability, add React Router with routes for Absences, Conflicts, Employee details, etc.
 
 3. Improve Test Coverage
+
     a. While Redux slices and integration flows are tested, add component tests for:
         i. AbsenceTable
         ii. AbsenceFilters
-        iii. Pagination.
+        iii. Pagination, etc.
 
 4. Server-side Pagination
     a. Currently, all absences are fetched at once (20 records in this dataset).
     b. In a real-world app with thousands of records, implement server-side pagination and possibly data reshaping for efficiency.
 
 5. Aggregate Conflict Data
+
     a. Conflict information is fetched per absence ID (one request per item). Ideally, backend should aggregate conflict info with absence data to reduce API calls.
 
 6. Type Safety Improvements
+
     a. Add stricter TypeScript types where possible (e.g., for Redux actions, API responses).
     b. Use yup or somehing else for API data validation to prevent runtime issues.
 
 7. Performance Optimizations
+
     a. Lazy load large components (e.g., ConflictsPanel, EmployeeAbsencesPanel).
 
 8. UI Enhancements
+
     a. Add loading skeletons or placeholders instead of plain “Loading…” text for better user experience.
     b. Provide clear alerts on empty states or API errors.
 
 9. CI/CD / Pre-push Rules
+
     a. Enforce branch protection rules to block merging/pushing if tests or build fail.
