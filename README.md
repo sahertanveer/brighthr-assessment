@@ -78,3 +78,6 @@ To learn React, check out the [React documentation](https://reactjs.org/).
 8. UI Enhancements
     a. Add loading skeletons or placeholders instead of plain “Loading…” text for better user experience.
     b. Provide clear alerts on empty states or API errors.
+
+9. CI/CD / Pre-push Rules
+    a. Enforce branch protection rules to block merging/pushing if tests or build fail.
