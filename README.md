@@ -45,7 +45,7 @@ You can learn more in the [Create React App documentation](https://facebook.gith
 
 To learn React, check out the [React documentation](https://reactjs.org/).
 
-##TODOs / Future Improvements
+## TODOs / Future Improvements
 
 1. Migrate to Vite
     a. Current setup uses CRA (react-scripts) which shows Webpack deprecation warnings.
